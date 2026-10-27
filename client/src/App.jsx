@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import MedicalReportAnalyzer from "./components/MedicalReportAnalyzer";
 import {
   Activity, ArrowRight, Bell, BrainCircuit, Building2,
   CalendarDays, CheckCircle2, ChevronRight, ClipboardList,
@@ -526,6 +527,9 @@ function PatientDashboard({ user, onLogout }) {
           <p className="mt-4 rounded-xl bg-slate-50 p-3 text-xs leading-5 text-slate-500">Not for emergencies or diagnosis. Confirm medical decisions with your clinician.</p>
         </div>
       </div>
+      <section className="mt-8" aria-label="Medical report analysis">
+        <MedicalReportAnalyzer />
+      </section>
     </DashboardLayout>
   );
 }
